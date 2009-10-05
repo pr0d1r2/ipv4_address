@@ -7,7 +7,7 @@ begin
     gem.name = "ipv4_address"
     gem.summary = %Q{Recognition of ipv4 addresses}
     gem.description = %Q{Recognize ipv4 addresses in many ways}
-    gem.email = "pr0d1r2@ragnarson.com"
+    gem.email = "pr0d1r2@gmail.com"
     gem.homepage = "http://github.com/Pr0d1r2/ipv4_address"
     gem.authors = ["Marcin Nowicki"]
     gem.add_development_dependency "rspec"
