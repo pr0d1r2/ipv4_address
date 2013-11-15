@@ -167,6 +167,8 @@ describe IPv4Address do
     it 'should be true when is not in documentation pool' do
       %w(
         192.0.2.1
+        198.51.100.1
+        203.0.113.1
       ).each do |address|
         IPv4Address.documentation?(address).should be_true
       end
@@ -365,7 +367,7 @@ describe IPv4Address do
 
   describe 'self.internet_routable?' do
     before(:each) do
-      @ipv4_address = mock(IPv4Address, :internet_routable? => false)
+      @ipv4_address = double(IPv4Address, :internet_routable? => false)
     end
 
     it 'should be true when given string is an ip address and it is internet routable' do
@@ -395,7 +397,7 @@ describe IPv4Address do
 
     describe 'internet_routable?' do
       before(:each) do
-        @ipv4_address.stub!(
+        @ipv4_address.stub(
           :reserved? => false,
           :private? => false,
           :loopback? => false,
