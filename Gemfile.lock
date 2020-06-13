@@ -1,0 +1,23 @@
+PATH
+  remote: .
+  specs:
+    ipv4_address (1.0.1)
+
+GEM
+  remote: https://rubygems.org/
+  specs:
+    diff-lcs (1.3)
+    rspec-mocks (3.9.1)
+      diff-lcs (>= 1.2.0, < 2.0)
+      rspec-support (~> 3.9.0)
+    rspec-support (3.9.3)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  ipv4_address!
+  rspec-mocks
+
+BUNDLED WITH
+   2.1.4
